@@ -264,7 +264,7 @@ export default function Aumento() {
             pointerEvents: "none",
           }}
         >
-          Vai sentar de ladinho pros cria?
+          Me da um aumento?
         </div>
 
         {/* SIM (botão real por cima do texto visual) */}
