@@ -310,37 +310,35 @@ export default function Aumento() {
 
         {/* NÃO */}
         <button
-          onClick={handleNoClick}
-          style={{
-            position: "absolute",
-            left: `${noPosition.x}%`,
-            top: `${noPosition.y}%`,
-            transform: "translate(-50%, -50%)",
-            zIndex: 3,
-            fontSize: "3rem",
-            fontFamily: '"Inter", sans-serif',
-            fontWeight: 200,
-            color: "rgba(250,190,21,0.98)",
-            textShadow:
-              "0 0 25px rgba(251,191,36,0.85), 0 0 50px rgba(251,191,36,0.45)",
-            cursor: "pointer",
-            transition:
-              "left 0.45s cubic-bezier(.2,.8,.2,1), top 0.45s cubic-bezier(.2,.8,.2,1), transform 0.08s",
-            background: "transparent",
-            border: "none",
-            padding: 0,
-            userSelect: "none",
+        onMouseEnter={handleNoClick} // <-- muda para onMouseEnter
+        style={{
+          position: "absolute",
+          left: `${noPosition.x}%`,
+          top: `${noPosition.y}%`,
+          transform: "translate(-50%, -50%)",
+          zIndex: 3,
+          fontSize: "3rem",
+          fontFamily: '"Inter", sans-serif',
+          fontWeight: 200,
+          color: "rgba(250,190,21,0.98)",
+          textShadow:
+            "0 0 25px rgba(251,191,36,0.85), 0 0 50px rgba(251,191,36,0.45)",
+          cursor: "pointer",
+          transition:
+            "left 0.45s cubic-bezier(.2,.8,.2,1), top 0.45s cubic-bezier(.2,.8,.2,1), transform 0.08s",
+          background: "transparent",
+          border: "none",
+          padding: 0,
+          userSelect: "none",
           }}
           onMouseDown={(e) => {
-            e.currentTarget.style.transform =
-              "translate(-50%, -50%) scale(0.95)";
+            e.currentTarget.style.transform = "translate(-50%, -50%) scale(0.95)";
           }}
           onMouseUp={(e) => {
             e.currentTarget.style.transform = "translate(-50%, -50%)";
           }}
           onTouchStart={(e) => {
-            e.currentTarget.style.transform =
-              "translate(-50%, -50%) scale(0.95)";
+            e.currentTarget.style.transform = "translate(-50%, -50%) scale(0.95)";
           }}
           onTouchEnd={(e) => {
             e.currentTarget.style.transform = "translate(-50%, -50%)";
